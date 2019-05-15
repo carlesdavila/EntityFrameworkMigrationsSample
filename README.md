@@ -1,0 +1,2 @@
+# EntityFrameworkMigrationsSample
+Entity Framework Migrations Sample
