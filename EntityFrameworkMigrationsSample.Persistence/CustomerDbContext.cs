@@ -21,8 +21,8 @@ namespace EntityFrameworkMigrationsSample.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>().HasData(
-                new Customer { Id = 1, FistName = "UserFirstName1", LastName = "UserLastName1" },
-                new Customer { Id = 2, FistName = "UserFirstName2", LastName = "UserLastName2" }
+                new Customer {Id = 1, FullName = "UserFirstName1 UserLastName1"},
+                new Customer {Id = 2, FullName = "UserFirstName2 UserLastName2"}
             );
         }
 
