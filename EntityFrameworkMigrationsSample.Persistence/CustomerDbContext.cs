@@ -20,10 +20,10 @@ namespace EntityFrameworkMigrationsSample.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Customer>().HasData(
-            //    new Customer {Id = 1, FistName = "UserFirstName1", LastName = "UserLastName1"},
-            //    new Customer {Id = 2, FistName = "UserFirstName2", LastName = "UserLastName2"}
-            //);
+            modelBuilder.Entity<Customer>().HasData(
+                new Customer { Id = 1, FistName = "UserFirstName1", LastName = "UserLastName1" },
+                new Customer { Id = 2, FistName = "UserFirstName2", LastName = "UserLastName2" }
+            );
         }
 
         private ILoggerFactory GetLoggerFactory()
